@@ -27,4 +27,4 @@ duoshuo_thread_id:
 
 然后就while true了一下
 
-<p><embed src="http://player.youku.com/player.php/sid/XNzEyNTQ0MTg0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></p>
+<iframe height=498 width=510 src='http://player.youku.com/embed/XNzEyNTQ0MTg0' frameborder=0 'allowfullscreen'></iframe>
