@@ -1,6 +1,6 @@
 ---
 ID: 969
-title: "HACKRF BTLE/BT4.0 低功耗蓝牙 无线 发包器 （可模拟iBeacon、建链、通信等）"
+title: "HackRF BTLE/BT4.0 低功耗蓝牙 无线 发包器 （可模拟iBeacon、建链、通信等）"
 author: jxj
 date: 2014-08-05 16:30:05
 post_excerpt: ""

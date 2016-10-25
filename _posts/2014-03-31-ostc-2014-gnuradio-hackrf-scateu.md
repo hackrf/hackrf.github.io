@@ -1,6 +1,6 @@
 ---
 ID: 513
-title: " OSTC 2014 开源技术大会 HackRF x GNURadio 讲稿"
+title: "OSTC 2014 开源技术大会 HackRF x GNURadio 讲稿"
 author: scateu
 date: 2014-03-31 14:34:42
 post_excerpt: ""

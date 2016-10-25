@@ -1,6 +1,6 @@
 ---
 ID: 1007
-title: "一些关于HACKRF GPS重放模拟的努力以及小工具脚本"
+title: "一些关于HackRF GPS重放模拟的努力以及小工具脚本"
 author: jxj
 date: 2014-10-27 17:55:56
 post_excerpt: ""

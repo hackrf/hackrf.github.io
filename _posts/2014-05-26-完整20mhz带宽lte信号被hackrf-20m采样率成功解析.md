@@ -1,6 +1,6 @@
 ---
 ID: 831
-title: "完整20MHz带宽LTE信号被HACKRF-20M采样率成功解析"
+title: "完整20MHz带宽LTE信号被HackRF-20M采样率成功解析"
 author: jxj
 date: 2014-05-26 20:02:45
 post_excerpt: ""
