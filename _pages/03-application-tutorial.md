@@ -14,8 +14,8 @@ views:
 ---
 
  - 2014年HFD硬件自由日清华站活动关于GNURadio和HackRF的介绍
- - [http://pan.baidu.com/s/1gdzJjQN)百度云盘链接
- - [http://www.slideshare.net/WangKang1/2014hfdgnuradio-x-hackrf-scateu)SlideShare
+ - [百度云盘链接](http://pan.baidu.com/s/1gdzJjQN)
+ - [SlideShare](http://www.slideshare.net/WangKang1/2014hfdgnuradio-x-hackrf-scateu)
 
 ![]({{ site.imageurl }}/2013/12/HackRF圆圈图.jpg)
 
