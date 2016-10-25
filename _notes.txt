@@ -1,0 +1,4 @@
+## To convert image url
+
+sed -ri 's|<a .*href="http://www.hackrf.net/wp-content/uploads/(.*)\"><img(.*)</a>|![]\({{ site.imageurl }}/\1\)|' *.md
+
