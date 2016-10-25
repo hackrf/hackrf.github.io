@@ -1,0 +1,53 @@
+---
+ID: 21
+permalink: /application-tutorial/
+title: "应用教程"
+author: scateu
+date: 2013-12-29 01:21:14
+post_excerpt: ""
+layout: page
+published: true
+duoshuo_thread_id:
+  - "1312073613704167429"
+views:
+  - "26870"
+---
+
+ - 2014年HFD硬件自由日清华站活动关于GNURadio和HackRF的介绍
+ - [http://pan.baidu.com/s/1gdzJjQN)百度云盘链接
+ - [http://www.slideshare.net/WangKang1/2014hfdgnuradio-x-hackrf-scateu)SlideShare
+
+![]({{ site.imageurl }}/2013/12/HackRF圆圈图.jpg)
+
+ - [DAB数字广播](/2014/03/15/hackrf-dab-广播发射-hackrf-dab-transmit.html)
+ - DVB数字广播 [参考](http://wiki.oz9aec.net/index.php/Simple_DVB_with_Gstreamer_and_GNU_Radio)
+ - [LTE](/2014/04/12/hackrf-lte-scan.html)
+ - TVSharp模拟电视
+ - GPS解析及重放
+ - NOAA气象卫星
+ - [HackRF进行NBFM(窄带调频)并进行亚音频静噪实验](/2014/06/17/hackrf-nbfm-tx-n-ctcss-squelch.html)
+ - WBFM接收
+ - [WBFM发射](/2014/01/03/wbfm发射.html)
+ - 罗技无线键盘
+ - RaspberryPi和HackRF结合使用
+ - 查看WiFi信号
+ - gqrx
+ - SDR#
+ - 952MHz
+ - AIS
+ - ADS-B
+ - [发射DRM广播信号](/2014/03/20/transmit-drm.html)
+ - [GNURadio关于OFDM的模块](/2014/03/19/gnuradio-ofdm-modules.html)
+ - [HackRF 发射 64QAM 信号](/2014/03/19/hackrf-64qam-transmit.html)
+ - [HackRF One 解调数字对讲机](/2014/03/18/hackrf-one-trunking-radio.html)
+ - [控遥控小车](/2014/03/14/用hackrf和gnuradio来实现对遥控小车的控制.html)
+
+## 安装
+
+## 参考
+
+ - cgran
+ - OZ9AEC.com
+ - gnuradio.org
+ - rtl-sdr.com
+ - <http://www.reddit.com/r/RTLSDR/>
