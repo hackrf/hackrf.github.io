@@ -11,6 +11,309 @@ views:
 duoshuo_thread_id:
   - "1312073613704167525"
 ---
+
+6个题目的描述见<https://github.com/scateu/HackRF_CSDN_SummerOfCode_2014>
+
+# 提案名称： 移植HackRF驱动到Android设备上
+
+## 提案内容
+
+**提案描述：**
+
+HackRF是一款历史上首次从软件、固件、电路原理图和PCB板图完全开源而毫无保留的软件无线电平台，可以覆盖10MHz - 6GHz，已经在kickstarter上成功融资。将会使得更多的软件工程师、Linux黑客们获得直
+接操作无线电波的可能。同时，对无线信号的安全分析也将会成为人们关注的新领域。
+
+目前HackRF必须依赖于电脑才行工作，这给用户在外场进行使用带来了极大的不便。
+
+Youtube上已经有人在一个Linux平板电脑上跑通了HackRF的驱动和gqrx程序。
+同时，Android上也有人开发了[SDR Touch](https://play.google.com/store/apps/details?id=marto.androsdr2)等程序，证明了这个方案的可行性。
+
+因此，我们的目标是在Android设备上使用USB On-the-go的方式将HackRF驱动起来
+
+HackRF基于libusb库实现的USB设备驱动，提供libhackrf和hackrf-utils等源代码。
+
+并且将基于Qt的gqrx程序移植到Android平板电脑上，打包成APK
+
+具体要求:
+
+1. 在安卓平台上移植libhackrf和hackrf-utils
+2. 利用Qt的跨平台功能将gqrx移植到Android平台
+3. 将libhackrf与gqrx进行对接，打包成为apk
+
+**项目代码地址：**
+ - <https://github.com/mossmann/hackrf>
+ - <http://gqrx.dk/>
+ - [SDR Touch](https://play.google.com/store/apps/details?id=marto.androsdr2)
+
+**计划：**
+
+* 中期检查前完成HackRF和gqrx和移植
+* 结题之前完成APK的打包
+
+**联系方式：**
+
+* email: <cuckoohello@gmail.com>
+
+## 对学生的要求
+
+* 了解 Android 开发流程
+* 了解 libusb 或一般USB驱动程序工作原理
+* 对 Linux 上的一般程序编译/CMake/Makefile有了解
+
+## 完成标准
+
+ + hackrf_transfer程序运行之后不报错,OTG供电工作正常
+ + APK打包后的gqrx可以直接在一般Android平台上运行
+ + gqrx程序在20MHz采样率的工作状态下解调FM成功
+
+# 提案名称： 为HackRF提供一个网页版的解调前端
+
+## 提案内容
+
+**提案描述：**
+
+HackRF是一款历史上首次从软件、固件、电路原理图和PCB板图完全开源而毫无保留的软件无线电平台，可以覆盖10MHz - 6GHz，已经在kickstarter上成功融资。将会使得更多的软件工程师、Linux黑客们获得直
+接操作无线电波的可能。同时，对无线信号的安全分析也将会成为人们关注的新领域。
+
+目前HackRF在计算机上的程序大部分是基于传统GUI程序提供的，例如gqrx基于Qt，SDRSharp基于C#。
+
+我们现在想要实现一个基于浏览器/Javascript/Node.js的信号解调前端， 这样使用者在远程通过浏览器就可以直接对常见的信号进行观察，并能完成简单的WBFM NBFM AM解调的功能。
+
+同时希望尽可能少的使用外部依赖库，尽可能优化其性能，使得能够在Raspberry Pi等嵌入式计算机上运行。这样用户就可以方便地部署天线架设更容易的场合。
+
+具体要求:
+
+1. 初步实现Node.js与libhackrf的集成
+2. 在Node.js上初步实现FFT显示的功能
+3. 使用Node.js实现瀑布图的功能
+4. 基于Javascript实现FM/AM/SSB的解调功能
+5. 优化网页前端，使得网页能够在iOS等移动设备的浏览器上正常运行
+6. 在Raspberry Pi上优化性能
+7. 发布代码,发布教程
+
+**项目代码地址：**
+ - <https://github.com/mossmann/hackrf>
+ - <http://gqrx.dk/>
+ - <http://websdr.org/>
+ - <http://websdr.ewi.utwente.nl:8901/>
+ - <https://github.com/kpreid/shinysdr>
+
+**计划：**
+
+* 中期检查前完成Node.js为后台的网页前端，实现FFT显示和瀑布图
+* 结题之前完成FM/AM/SSB解调的功能，并实现在Raspberry Pi上部署
+
+**联系方式：**
+
+* email: <cuckoohello@gmail.com>
+
+
+## 对学生的要求
+
+* 熟悉 Javascript 开发
+* 熟悉 Node.js 开发
+* 基本了解FM解调的原理
+* 在导师的指导下能理解 FFT 的基本思路，从而完成编码
+
+## 完成标准
+
+* 在常见浏览器上可以使用
+* 可以正常观察信号的FFT和瀑布图
+* 能够解调FM/AM/SSB信号
+* 在Raspberry Pi上能够跑通
+
+# 提案名称： 基于HackRF开发GPS信号仿真模拟器
+
+## 提案内容
+
+**提案描述：**
+研究并实现基于HackRF的GPS信号仿真模拟器，使得用户在电脑上给定地理坐标之后，通过HackRF发射出各卫星对应GPS模拟信号，并能通过一般的GPS接收机得到物理验证。
+
+GNSS-SDR是德国同学发起的使用软件无线电来对接收到的卫星定位系统信号进行处理的项目，在开发信号生成部分时可以参考。
+
+HackRF是一款历史上首次从软件、固件、电路原理图和PCB板图完全开源而毫无保留的软件无线电平台，可以覆盖10MHz - 6GHz，已经在kickstarter上成功融资。将会使得更多的软件工程师、Linux黑客们获得直
+接操作无线电波的可能。同时，对无线信号的安全分析也将会成为人们关注的新领域。
+
+GNURadio开源软件无线电框架提供了全面的对各种通信系统常用的信号处理模块，并提供了完整的信号开发模块，并已经形成完善良好的开源生态环境。但由于长久以来没有价格平易近人的硬件外设方案，使得GNURadio的学习门槛较高。HackRF的出现将使得开源软件无线电被大众普遍认识提供了可能。
+
+
+具体要求:
+
+1. 分析GPS的信号原理
+2. 使用Matlab完成信号的仿真
+3. 调试基带信号，使其能够通过HackRF发射出来，并可以在手机上得到验证
+4. 不依赖于Matlab完成信号的生成
+5. 发布代码及教程
+
+**项目代码地址：**
+ - <https://github.com/mossmann/hackrf>
+ - <http://gnss-sdr.org>
+
+**计划：**
+
+* 中期检查前完成Matlab生成的IQ信号仿真，通过HackRF发射后可以被一般GPS接收机解析
+* 结题之前完成不依赖于Matlab的信号生成及HackRF发射
+
+**联系方式：**
+
+* email: <putaoshu@gmail.com>
+
+## 对学生的要求
+
+* 熟悉信号处理知识
+* 了解GPS定位的原理
+* 对射频调试有一定的概念
+
+## 完成标准
+
+* Matlab生成的信号可以通过软件解调
+* 可以指定输入经度/纬度
+* 提供一个简单的命令行参数实用程序，直接对接hackrf_transfer程序
+
+# 提案名称： 基于HackRF进行iBeacon协议分析
+
+## 提案内容
+
+**提案描述：**
+
+GNURadio开源软件无线电框架提供了全面的对各种通信系统常用的信号处理模块，并提供了完整的信号开发模块，并已经形成完善良好的开源生态环境。但由于长久以来没有价格平易近人的硬件外设方案，使得GNURadio的学习门槛较高。HackRF的出现将使得开源软件无线电被大众普遍认识提供了可能。
+
+HackRF是一款历史上首次从软件、固件、电路原理图和PCB板图完全开源而毫无保留的软件无线电平台，可以覆盖10MHz - 6GHz，已经在kickstarter上成功融资。将会使得更多的软件工程师、Linux黑客们获得直
+接操作无线电波的可能。同时，对无线信号的安全分析也将会成为人们关注的新领域。
+
+iBeacon是苹果公司2013年9月发布的移动设备用OS（iOS7）上配备的新功能。其工作方式是，配备有 低功耗蓝牙（BLE）通信功能的设备使用BLE技术向周围发送自己特有的ID，接收到该ID的应用软件会根据该ID采取一些行动。比如，在店铺里设置iBeacon通信模块的话，便可让iPhone和iPad上运行的应用软件将顾客进入店铺这一资讯告知服务器，或者由服务器向顾客发送折扣券及进店积分。此外，还可以在家电发生故障或停止工作时使用iBeacon向应用软件发送资讯，通知家电故障。
+
+目前GNURadio已经提供了gr-bluetooth模块，可以供参考。
+
+具体要求:
+
+1. 使用已有的Bluetooth USB Dongle和iPad/iPhone跑通基本的iBeacon原理，写出教程
+2. 跑通现有的gr-bluetooth模块
+3. 基于现有的gr-bluetooth模块对iBeacon信号进行分析处理
+4. 使用gr_modtool封装成为易于使用的工具集gr-ibeacon
+5. 发布代码
+6. 发布教程文章
+
+**项目代码地址：**
+ - <https://github.com/mossmann/hackrf>
+ - <https://github.com/greatscottgadgets/gr-bluetooth>
+
+**计划：**
+
+* 中期检查前完成iBeacon信号原理的分析，能生成简单的iBeacon信号被苹果设备解析
+* 结题之前完成gr-ibeacon模块的编写
+
+**联系方式：**
+
+* email: <putaoshu@gmail.com>
+
+
+## 对学生的要求
+
+* 能够在导师的指导下理解iBeacon/Bluetooth/GMSK
+* 熟悉一般的 C++ 代码编写
+* 对 Linux 下的软件开发有兴趣
+
+## 完成标准
+
+* gr-ibeacon模块可以发射iBeacon信号，被Apple设备解析
+* gr-ibeacon模块可以接收由Apple设备发射的iBeacon信号，解析出传输的信息
+
+# 提案名称： 基于HackRF的开源伪基站检测
+
+## 提案内容
+
+**提案描述：**
+
+目前不法分子使用OpenBTS项目搭建群发短信的伪基站，
+本项目旨在分析伪基站的特征，使用HackRF的GSM解调功能对伪基站进行定位和捕获。
+
+GNURadio开源软件无线电框架提供了全面的对各种通信系统常用的信号处理模块，并提供了完整的信号开发模块，并已经形成完善良好的开源生态环境。但由于长久以来没有价格平易近人的硬件外设方案，使得GNURadio的学习门槛较高。HackRF的出现将使得开源软件无线电被大众普遍认识提供了可能。
+
+HackRF是一款历史上首次从软件、固件、电路原理图和PCB板图完全开源而毫无保留的软件无线电平台，可以覆盖10MHz - 6GHz，已经在kickstarter上成功融资。将会使得更多的软件工程师、Linux黑客们获得直
+接操作无线电波的可能。同时，对无线信号的安全分析也将会成为人们关注的新领域。
+
+具体要求:
+
+1. 分析现有的伪基站项目代码，写出伪基站的工作方式
+2. 找到伪基站的工作Pattern，给出文档
+3. 使用HackRF的GSM解调功能，对伪基站发出的信号进行判别
+4. 发布代码及文档
+
+**项目代码地址：**
+ - <https://github.com/mossmann/hackrf>
+ - <http://openbts.org>
+ - <https://svn.berlin.ccc.de/projects/airprobe/>
+
+**计划：**
+
+* 中期检查前完成伪基站工作原理的分析，发布分析报告
+* 结题之前完成伪基站信号特征识别的验证代码
+
+**联系方式：**
+
+* email: <scateu@gmail.com>
+
+## 对学生的要求
+
+* 熟悉 GSM 通信原理
+* 在导师的指导下可以完成GSM伪基站的原理分析
+* 熟悉数字信号处理的代码编写
+
+## 完成标准
+
+* 发布伪基站工作方式分析报告
+* 伪基站特征检测原理代码验证通过，能够从原理上区分正常基站与伪基站
+
+# 提案名称： 基于HackRF的矢量信号源和矢量信号分析仪
+
+## 提案内容
+
+**提案描述：**
+
+使用HackRF实现一个简单的矢量信号源和矢量信号分析仪的功能，这样就可以坐在家中享用六位数或七位数射频仪表的功能了。
+
+HackRF是一款历史上首次从软件、固件、电路原理图和PCB板图完全开源而毫无保留的软件无线电平台，可以覆盖10MHz - 6GHz，已经在kickstarter上成功融资。将会使得更多的软件工程师、Linux黑客们获得直接操作无线电波的可能。同时，对无线信号的安全分析也将会成为人们关注的新领域。
+
+本题目由清华大学电子系的老师指导，所以不用太担心通信原理知识的问题。
+
+具体要求:
+
+1. 实现PSK、QAM以及更多的矢量信号产生，如BPSK/QPSK/8PSK/16QAM/64QAM等
+2. 可调整调整基带滤波器的参数、符号率
+2. 实现PSK/QAM信号的星座图显示
+3. 计算PSK/QAM信号的EVM
+4. 使用Qt或者PyQt或者Javascript完成一个简单的GUI界面
+5. 发布代码并发布文档
+
+**项目代码地址：**
+ - <https://github.com/mossmann/hackrf>
+
+**计划：**
+
+* 中期检查前完成信号生成和星座图显示的功能
+* 结题之前完成EVM计算和GUI界面
+
+**联系方式：**
+
+* email: <hackrf@sina.cn>
+
+
+## 对学生的要求
+
+* 了解基本的通信原理与数字通信原理
+* 对于数字信号处理的C++编程有一定的经验
+
+## 完成标准
+
+1. 生成的矢量信号可以通过安捷伦的射频仪表验证
+2. 生成的信号功率、频率、符号率、调制方式
+3. 接收的矢量信号的格式、符号率、频率，并可显示星座图
+4. 接收的矢量信号EVM值可以计算得出
+ 
+
+---
+
 <div>
 
 5月28日起，CSDN正式推出“开源夏令营” 技术公益活动。在校的学生可以参与，通过考评后可获得5000元奖金。
