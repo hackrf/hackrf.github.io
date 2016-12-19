@@ -12,6 +12,11 @@ duoshuo_thread_id:
 views:
   - "30585"
 ---
+
+现在推荐使用[TUNA镜像提供的PyBOMBS](/2016/06/pybombs-mirror-tuna/)来安装GNURadio。
+
+---
+
 HackRF旨在提供一套开源的软件无线电前端硬件。 拿到HackRF之后，您可以按照顺序做以下事情:
 <ul>
 	<li><a href="/2013/12/%E5%9C%A8windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85hackrf%E9%A9%B1%E5%8A%A8">在Windows环境下安装HackRF驱动</a></li>
