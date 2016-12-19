@@ -22,3 +22,5 @@ markdown: kramdown
 include: ['_pages']
 
 imageurl: "https://raw.githubusercontent.com/hackrf/hackrf.github.io/master/images"
+
+permalink: /:categories/:year/:month/:title/
