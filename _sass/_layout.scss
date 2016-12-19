@@ -25,7 +25,7 @@
 }
 
 #site-nav-background{
-    background: #424242;
+    background-color: $grey-color-dark;
 }
 
 .site-nav {
@@ -37,13 +37,17 @@
     }
 
     .page-link {
-//       color: $text-color;
-        color: #FFF;
+        color: $grey-color-light;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
+        }
+
+        &:hover {  // scateu
+                color: darkgrey;
+                text-decoration: none;
         }
     }
 
@@ -55,6 +59,10 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+
+	.page-link {
+	    color: $text-color; // mobile
+	}
 
         .menu-icon {
             display: block;
@@ -90,6 +98,7 @@
             padding: 5px 10px;
         }
     }
+
 }
 
 
@@ -211,6 +220,7 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+
 }
 
 .post-content {
