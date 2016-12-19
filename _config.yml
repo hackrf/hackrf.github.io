@@ -17,6 +17,10 @@ url: "https://hackrf.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+kramdown:
+        input: GFM
+#highlighter: pygments
+#highlighter: rouge
 
 # _pages
 include: ['_pages']
