@@ -14,20 +14,20 @@ views:
 ---
 HackRF旨在提供一套开源的软件无线电前端硬件。 拿到HackRF之后，您可以按照顺序做以下事情:
 <ul>
-	<li><a href="/2013/12/30/%E5%9C%A8windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85hackrf%E9%A9%B1%E5%8A%A8">在Windows环境下安装HackRF驱动</a></li>
+	<li><a href="/2013/12/%E5%9C%A8windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85hackrf%E9%A9%B1%E5%8A%A8">在Windows环境下安装HackRF驱动</a></li>
 	<li>使用HackRF收听FM广播</li>
 	<li><del>（目前版本没有更新）下载<a href="/下载">LiveCD</a></del>
 <ul>
-	<li>在Linux下进行WBFM调频发射测试: <a href="/2014/01/03/wbfm发射">教程</a></li>
+	<li>在Linux下进行WBFM调频发射测试: <a href="/2014/01/wbfm发射">教程</a></li>
 </ul>
 </li>
-	<li>在自己的<a href="/2013/12/30/linux%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%90%AD%E5%BB%BAhackrf%E7%8E%AF%E5%A2%83">Linux系统上搭建HackRF的环境</a></li>
+	<li>在自己的<a href="/2013/12/linux%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%90%AD%E5%BB%BAhackrf%E7%8E%AF%E5%A2%83">Linux系统上搭建HackRF的环境</a></li>
 	<li>用大牛搭好的VMWare虚拟机<a href="/2014/03/%E6%B5%8B%E8%AF%95hackrf-one%E7%9A%84ubuntu%E9%95%9C%E5%83%8F">先试一把</a></li>
 </ul>
 <h2>Linux环境搭建</h2>
-见<a href="/2013/12/30/linux%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%90%AD%E5%BB%BAhackrf%E7%8E%AF%E5%A2%83">Linux系统上搭建HackRF的环境</a>一文
+见<a href="/2013/12/linux%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%90%AD%E5%BB%BAhackrf%E7%8E%AF%E5%A2%83">Linux系统上搭建HackRF的环境</a>一文
 <h2>Mac环境搭建</h2>
-见在<a title="在Mac上安装HackRF环境" href="/2014/04/18/mac-install-hackrf">Mac上安装HackRF环境</a>一文
+见在<a title="在Mac上安装HackRF环境" href="/2014/04/mac-install-hackrf">Mac上安装HackRF环境</a>一文
 <h2>Visual Studio 2008的Solution例子</h2>
 链接：<http://pan.baidu.com/s/1mgqPpK8> 密码：uhci
 <h2>特性</h2>
