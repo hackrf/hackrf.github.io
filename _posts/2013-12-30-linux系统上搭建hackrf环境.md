@@ -11,6 +11,12 @@ duoshuo_thread_id:
 views:
   - "25518"
 ---
+
+2016年12月更新: 现在推荐使用[TUNA镜像提供的PyBOMBS](/2016/06/pybombs-mirror-tuna/)来安装GNURadio。
+
+---
+
+
 <strong><span style="color: #ff0000;">注意</span>:</strong> <strong>不要</strong>使用软件源里的GNURadio，因为软件源里的GNURadio太久没有重新打包。
 <h2>方法一:Ubuntu 14.04版本上搭建环境方法：</h2>
 <!--more-->
