@@ -8,7 +8,12 @@ layout: default
   </header>
 
   <div class="post-content">
+    {% if page.mathjax %} {% include mathjax.html %} {% endif %}
     {{ content }}
   </div>
 
+  {% if page.diagram %} {% include diagram.html %} {% endif %}
+
+  {% include duoshuo.html %}
+  {% if page.ruby_notation %} {% include ruby_notation.html %} {% endif %}
 </article>

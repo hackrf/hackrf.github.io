@@ -3,6 +3,7 @@ ID: 580
 title: "关于调幅/单边带调制的一点讨论"
 author: scateu
 date: 2014-04-06 14:11:59
+mathjax: true
 post_excerpt: ""
 layout: post
 published: true
@@ -17,7 +18,7 @@ duoshuo_thread_id:
 
 调制后的信号为:
 
-$g(t)= f(t)\times f_c(t) $
+$g(t)= f(t) \cdot f_c(t) $
 
 <img class="alignnone" alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Amfm3-en-de.gif/250px-Amfm3-en-de.gif" width="250" height="195" />
 <h2>例子</h2>
@@ -27,15 +28,15 @@ $g(t)= f(t)\times f_c(t) $
 
 则调制后的信号为:
 
-$g(t) = f(t)\times f_c(t) = \cos(f_1 t) \times \cos(f_c t) $
+$g(t) = f(t)\cdot f_c(t) = \cos(f_1 t) \cdot \cos(f_c t) $
 
 根据积化和差公式:
 
-$\cos(\alpha)\cos(\beta) = [\cos(\alpha + \beta) + \cos(\alpha - \beta)]/2 $
+$\cos(\alpha)\cos(\beta) = \frac{1}{2}[\cos(\alpha + \beta) + \cos(\alpha - \beta)] $
 
 则有
 
-$g(t) = [\cos(f_1 t + f_c t) + \cos(f_1 t - f_c t)]/2 = [\cos(f_1 + f_c)t + \cos(f_1 - f_c)t]/2$
+$g(t) = \frac{1}{2}[\cos(f_1 t + f_c t) + \cos(f_1 t - f_c t)] = \frac{1}{2} [\cos(f_1 + f_c)t + \cos(f_1 - f_c)t]$
 
 那么我们会发现，我们所要传输的有效信息，被分成上下两个边带。而每个边带里的内容都是一样的。这样在我们传输信号的时候，浪费了发射功率。
 
