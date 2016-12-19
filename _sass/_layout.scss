@@ -8,7 +8,6 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
-    background: #424242;
 }
 
 .site-title {
@@ -23,6 +22,10 @@
     &:visited {
         color: #FFF;
     }
+}
+
+#site-nav-background{
+    background: #424242;
 }
 
 .site-nav {
