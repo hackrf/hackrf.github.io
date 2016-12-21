@@ -11,6 +11,14 @@ views:
 duoshuo_thread_id:
   - "1312073613704167476"
 ---
+2016年12月更新: 现在推荐使用[TUNA镜像提供的PyBOMBS](/2016/06/pybombs-mirror-tuna/)来安装GNURadio。
+
+以下方法已经不建议使用。
+
+
+----
+
+
 1.将<a title="测试HackRF One的Ubuntu虚拟机" href="http://www.hackrf.net/2014/03/%e6%b5%8b%e8%af%95hackrf-one%e7%9a%84ubuntu%e9%95%9c%e5%83%8f/" target="_blank">VMWare镜像</a>中的~/sdr/ 复制到你的linux中
 
 2.将以下文本替换掉build-gnuradio里的内容，没错
