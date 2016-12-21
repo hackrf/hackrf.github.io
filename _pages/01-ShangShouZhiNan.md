@@ -1,6 +1,6 @@
 ---
 ID: 216
-permalink: /ShangShouZhiNan/
+permalink: /上手指南/
 title: "上手指南"
 author: scateu
 date: 2014-03-13 12:38:38

@@ -48,3 +48,26 @@ PyBOMBS 镜像使用帮助
 
 
 感谢[清华大学TUNA镜像源](https://mirrors.tuna.tsinghua.edu.cn)和[阿里云开源镜像站](http://mirrors.aliyun.com)提供镜像支持。
+
+
+## Extra: USRP B200
+
+在安装完uhd:
+
+```bash
+pybombs install uhd
+```
+
+之后，还需要做以下事情: ([参考](https://rfpoweramp.com/2014/06/10/setting-up-the-usrp-b200/))
+
+```bash
+. ./setup_env.sh
+uhd_images_downloader   #下载固件
+
+
+# 安装udev rules 否则会提示: USB open failed: insufficient permissions.
+sudo cp ./lib/uhd/utils/uhd-usrp.rules /etc/udev/rules.d/99-uhd-usrp.rules
+sudo udevadm control --reload-rules #重新载入
+sudo udevadm trigger                #触发一下，省去插拨USB
+```
+

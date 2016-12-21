@@ -1,5 +1,5 @@
 ---
-permalink: /analysis-of-hardware/
+permalink: /硬件/
 ID: 23
 title: "硬件分析"
 author: scateu

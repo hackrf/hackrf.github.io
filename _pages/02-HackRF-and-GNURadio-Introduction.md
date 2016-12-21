@@ -1,6 +1,6 @@
 ---
 ID: 206
-permalink: /HackRF-and-GNURadio-Introduction/
+permalink: /hackrf与gnuradio入门指南/
 title: "《入门》"
 author: scateu
 date: 2014-03-11 09:40:44
