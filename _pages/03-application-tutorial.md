@@ -1,6 +1,6 @@
 ---
 ID: 21
-permalink: /application-tutorial/
+permalink: /应用/
 title: "应用教程"
 author: scateu
 date: 2013-12-29 01:21:14
