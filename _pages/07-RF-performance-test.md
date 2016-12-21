@@ -1,6 +1,6 @@
 ---
 ID: 38
-permalink: /RF-performance-test/
+permalink: /射频指标/
 title: "射频指标测试"
 author: scateu
 date: 2013-12-29 01:38:13
