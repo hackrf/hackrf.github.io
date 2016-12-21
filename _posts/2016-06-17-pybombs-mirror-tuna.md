@@ -33,7 +33,7 @@ PyBOMBS 镜像使用帮助
 	. ./setup_env.sh
 	gnuradio-companion
 
-	pybombs install rtl-sdr hackrf bladerf gr-osmosdr gr-bluetooth gr-ieee-80211
+	pybombs install rtl-sdr hackrf bladeRF gr-osmosdr gr-bluetooth gr-ieee-80211
 
 **更新**
 
