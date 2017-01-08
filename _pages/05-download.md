@@ -35,6 +35,7 @@ views:
 <del>或者在博客下面留言，我们可以免费给您邮寄一份。</del>
 <h1>Windows环境下的工具</h1>
 <ul>
+	<li><a href="http://www.gcndevelopment.com/gnuradio/downloads/installers/v1.1.2/gnuradio_3.7.10.1_win64.msi">GNU Radio Win64 Build</a></li>
 	<li><a href="http://sourceforge.net/projects/libwdi/files/zadig/">Zadig</a> 用于安装HackRF驱动</li>
 	<li><a href="http://sdrsharp.com/downloads/sdr-nightly.zip">SDR# </a>
 <ul>
